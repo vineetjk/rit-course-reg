@@ -186,7 +186,7 @@
 				doc.text(23, 173, sub8code);
 				doc.text(23, 182, sub9code);
 				
-
+				doc.setFontSize(12);
 				// subject names
 				doc.text(45, 112, sub1);
 				doc.text(45, 121, sub2);
@@ -197,12 +197,23 @@
 				doc.text(45, 165, sub7);
 				doc.text(45, 173, sub8);
 				doc.text(45, 182, sub9);
-
-
 				
+				
+				doc.setFontSize(14);
+				// subject credits
+				doc.text(114, 112, sub1credits);
+				doc.text(114, 121, sub2credits);
+				doc.text(114, 129, sub3credits);
+				doc.text(114, 137, sub4credits);
+				doc.text(114, 146, sub5credits);
+				doc.text(114, 155, sub6credits);
+				doc.text(114, 165, sub7credits);
+				doc.text(114, 173, sub8credits);
+				doc.text(114, 182, sub9credits);
 
 
 				doc.save('test.pdf');
+
 			});
 		</script>
 </body>
