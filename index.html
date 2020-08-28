@@ -10,6 +10,7 @@
 	<!-- CSS only -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<!-- JS, Popper.js, and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -27,9 +28,9 @@
 
 	<nav class="navbar navbar-light bg-light">
 		<a class="navbar-brand">RIT Course Registration form</a>
-		<button class="btn btn-outline-success my-2 my-sm-0" >Instructions</button>
+		<a href="#instruct" class="btn btn-outline-success my-2 my-sm-0">Instructions</a>
 
-		
+
 	</nav>
 
 
@@ -47,7 +48,7 @@
 			</div>
 			<div class="col">
 				<label for="cars">Nature Of Semester</label>
-				<select  class="btn btn-outline-success" name="nature" id="regtype">
+				<select class="btn btn-outline-success" name="nature" id="regtype">
 					<option value="regular">Regular</option>
 					<option value="re-reg">Re-Registration</option>
 					<option value="supli">Suplimentary</option>
@@ -152,30 +153,35 @@
 		</div>
 		<div>
 
-			<h4 class="mt-5 instruct">Idea</h4>
-		<ul>
-			<li>We understand taking printout and filling the form and again scanning it and again converting it into pdf and sending it to your proctor is a loooong process and many people cant take printouts for some reasons..</li>
+			<h4 class="mt-5 " id="instruct">Idea</h4>
+			<ul>
+				<li>We understand taking printout and filling the form and again scanning it and again converting it
+					into pdf and sending it to your proctor is a loooong process and many people cant take printouts for
+					some reasons..</li>
 
-			<li>We made it Simple, 
-				<ol><li>Just fill the above form in your Mobile Phone or PC</li>
-				<li>Download the file</li>
-			<li>Share it with your Proctor</li></ol> </li>
-			
-		</ul>
-		<h4 class="mt-5 instruct">Instructions</h4>
-		<ul>
-			<li>This Application helps you to fill Course registration Form for any semester.</li>
-			<li>After Downloading the file You must Submit it to your proctor.</li>
-			<li>Ask Your Proctor if digitally filled form is acceptable or not.</li>
-			<li>We are not responsible for any mistakes while filling the form.</li>
-			<li>You can use this application as many number of times you want.</li>
-			<li>Share with your friends if it helped you.</li>
-			<li>Love to hear feedbacks. Please share!</li>
-			
-		</ul>
+				<li>We made it Simple,
+					<ol>
+						<li>Just fill the above form in your Mobile Phone or PC</li>
+						<li>Download the file</li>
+						<li>Share it with your Proctor</li>
+					</ol>
+				</li>
+
+			</ul>
+			<h4 class="mt-5 ">Instructions</h4>
+			<ul>
+				<li>This Application helps you to fill Course registration Form for any semester.</li>
+				<li>After Downloading the file You must Submit it to your proctor.</li>
+				<li>Ask Your Proctor if digitally filled form is acceptable or not.</li>
+				<li>We are not responsible for any mistakes while filling the form.</li>
+				<li>You can use this application as many number of times you want.</li>
+				<li>Share with your friends if it helped you.</li>
+				<li>Love to hear feedbacks. Please share!</li>
+
+			</ul>
+		</div>
 	</div>
-	</div>
-	
+
 	</div>
 
 	<script>
@@ -332,7 +338,7 @@
 				d.getFullYear();
 
 
-			
+
 			doc.setFontSize(10);
 			doc.text(41, 225, today);
 
@@ -360,10 +366,20 @@
 		}
 
 		$('#inputFileToLoad').change(encodeImageFileAsURL(function (base64Img) {
-			
+
 			signData = base64Img;
 		}));
 	</script>
+
+	<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+		<div class="container">
+			
+			<small>Made with ♡ by <a style="color: inherit;" href="https://vineetjk.me">vineetjk</a></small>
+			<small style="float: right;"> <a style="color: inherit;" href="https://github.com/vineetjk/rit-course-reg/"><i class="fa fa-github" aria-hidden="true"></i></a></small>
+			
+		</div>
+		
+	</footer>
 </body>
 
 </html>
